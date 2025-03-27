@@ -97,8 +97,9 @@ export default {
             'Topics should relate to emerging technologies in Computer Science'
           ],
           coordinators: [
-            { name: 'Rishi Kumar', phone: '9876543210' },
-            { name: 'Priya S', phone: '9876543211' }
+            { name: 'Mridul aa', phone: '7695888103' },
+            { name: 'Pooja M', phone: '9361083662' },
+            { name: 'Mohammed Rizhwan', phone: '9952720810' }
           ]
         },
         {
@@ -115,13 +116,35 @@ export default {
             'Judges decision will be final'
           ],
           coordinators: [
-            { name: 'Karthik R', phone: '9876543212' },
-            { name: 'Sneha M', phone: '9876543213' }
+            { name: 'Joshiga', phone: '8778957458' },
+            { name: 'Mythili', phone: '6369497320' },
+            { name: 'Sasikumar', phone: '9342866773' },
+            { name: 'Subramaniya Siva', phone: '8825470295' }
+          ]
+        },
+        {
+          title: 'UI and UX Design',
+          image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQDxUPEBAQFRAQFRAWFRUVEA8VEBUVFRUWFxUVFhUYHSggGholHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHSUtLS0tLSstLS0tLS0vMCstLS0tLS0tLS0tKy0tKystLSstLy0tLS0tLS0rLS0tLS0tLf/AABEIALcBEwMBEQACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAABAgADBAUGBwj/xABEEAACAQIEAQgGCAUDAgcAAAABAgADEQQSITEFEyJBUWFxgZEGMnKhscEUI0JSgtHS8AcVVJOiM2LhU5QWJDRDRGOC',
+          description: 'Design user interfaces and experiences for web and mobile applications.',
+          fullDescription: 'This event challenges participants to create beautiful and functional user interfaces and experiences. Showcase your creativity, design skills, and understanding of user behavior and accessibility principles.',
+          skills: ['UI Design', 'UX Research', 'Prototyping'],
+          rules: [
+            'Team size: 1-2 members',
+            'Participants must bring their own design tools/software',
+            'Design brief will be provided at the start of the event',
+            'Time limit: 4 hours',
+            'Presentation of design decisions required'
+          ],
+          coordinators: [
+            { name: 'Rajavaman K', phone: '6374666253' },
+            { name: 'Abinaya A', phone: '6379076960' },
+            { name: 'Kavya', phone: '9345648054' },
+            { name: 'Akhilkarthikeyan', phone: '9363180933' }
           ]
         },
         {
           title: 'Password Cracking',
-          image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQDxUPEBAQFRAQFRAWFRUVEA8VEBUVFRUWFxUVFhUYHSggGholHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHSUtLS0tLSstLS0tLS0vMCstLS0tLS0tLS0tKy0tKystLSstLy0tLS0tLS0rLS0tLS0tLf/AABEIALcBEwMBEQACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAABAgADBAUGBwj/xABEEAACAQIEAQgGCAUDAgcAAAABAgADEQQSITEFEyJBUWFxgZEGMnKhscEUI0JSktHS8AcVVJOiM2LhU5QWJDRDRGOC',
+          image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQDxUPEBAQFRAQFRAWFRUVEA8VEBUVFRUWFxUVFhUYHSggGholHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHSUtLS0tLSstLS0tLS0vMCstLS0tLS0tLS0tKy0tKystLSstLy0tLS0tLS0rLS0tLS0tLf/AABEIALcBEwMBEQACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAABAgADBAUGBwj/xABEEAACAQIEAQgGCAUDAgcAAAABAgADEQQSITEFEyJBUWFxgZEGMnKhscEUI0JSgtHS8AcVVJOiM2LhU5QWJDRDRGOC',
           description: 'Solve cryptographic challenges and break complex encryption algorithms.',
           fullDescription: 'This competition tests your cryptographic skills and understanding of security principles. Participants will need to solve various cryptographic puzzles and break encrypted messages.',
           skills: ['Cryptography', 'Security', 'Problem Solving'],
@@ -133,62 +156,90 @@ export default {
             'Bring your own laptop with necessary tools installed'
           ],
           coordinators: [
-            { name: 'Vikram J', phone: '9876543214' },
-            { name: 'Aisha T', phone: '9876543215' }
+            { name: 'Rajasree E', phone: '6383076735' },
+            { name: 'Priyadharshini', phone: '7871736671' },
+            { name: 'Sachin', phone: '9655370719' },
+            { name: 'Madhan V', phone: '8072664400' }
           ]
         },
         {
-          title: 'Bug Hunting Challenge',
+          title: 'Animation Maker',
           image: 'https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg',
-          description: 'Find and fix bugs in given code snippets and applications within time constraints.',
-          fullDescription: 'This challenge focuses on your debugging skills. Participants will be presented with faulty code or applications and need to identify and fix the bugs to make them work correctly.',
-          skills: ['Debugging', 'Code Analysis', 'Problem Solving'],
+          description: 'Create animated content using various tools and techniques.',
+          fullDescription: 'Show off your animation skills in this creative competition. Participants will create animated shorts, motion graphics, or interactive animations based on a given theme.',
+          skills: ['Animation', 'Creative Design', 'Storytelling'],
           rules: [
             'Individual or team of 2 participants',
-            'Three rounds of increasing complexity',
-            'Languages: Java, Python, JavaScript',
-            'Limited time for each debugging task',
-            'Solutions will be judged on correctness and efficiency'
+            'Animation length: 30-90 seconds',
+            'Participants must bring their own animation software/tools',
+            'Theme will be provided at the start of the event',
+            'Judging based on creativity, technical skill, and adherence to theme'
           ],
           coordinators: [
-            { name: 'Rahul M', phone: '9876543216' },
-            { name: 'Divya P', phone: '9876543217' }
+            { name: 'Sowndaya A', phone: '6383046798' },
+            { name: 'SivaPrakash S', phone: '9363440752' },
+            { name: 'Ajayakumar', phone: '9363456438' },
+            { name: 'Pragadesh', phone: '9994161318' }
           ]
         },
         {
-          title: 'Hackathon',
-          image: 'https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg',
-          description: 'Build innovative solutions for real-world problems in a 24-hour coding marathon.',
-          fullDescription: 'The flagship event of GENIO 2K25, this 24-hour hackathon challenges teams to develop innovative solutions for real-world problems. Present your working prototype and pitch your idea to industry experts.',
-          skills: ['Development', 'Innovation', 'Teamwork'],
-          rules: [
-            'Team size: 3-4 members',
-            'Duration: 24 hours',
-            'Problem statements will be released at the start',
-            'Evaluation based on innovation, functionality, and presentation',
-            'Teams need to bring their own hardware and development tools'
-          ],
-          coordinators: [
-            { name: 'Arjun K', phone: '9876543218' },
-            { name: 'Meera L', phone: '9876543219' }
-          ]
-        },
-        {
-          title: 'Code Golf',
+          title: 'Technical Quiz',
           image: 'https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png',
-          description: 'Solve programming challenges with the shortest code possible.',
-          fullDescription: 'Code Golf challenges participants to solve programming problems with the smallest code size possible. Efficiency in terms of code length (characters) is more important than execution speed.',
-          skills: ['Programming', 'Optimization', 'Logic'],
+          description: 'Test your knowledge in various technical domains from programming to hardware.',
+          fullDescription: 'Compete in this fast-paced quiz on various technical topics including programming languages, algorithms, computer hardware, networking, and technology trends.',
+          skills: ['Technical Knowledge', 'Quick Thinking', 'Problem Solving'],
+          rules: [
+            'Team size: 2 members',
+            'Multiple rounds with varying formats',
+            'Topics include programming, hardware, networking, and tech trends',
+            'No electronic devices allowed during the quiz',
+            'Final decision rests with the quiz master'
+          ],
+          coordinators: [
+            { name: 'Narmatha', phone: '6369359396' },
+            { name: 'Thillainaragan B', phone: '9994484358' },
+            { name: 'Rakshana Fathima', phone: '8838191447' },
+            { name: 'Siddharth', phone: '9944650562' }
+          ]
+        },
+        {
+          title: 'AI Puzzle Solving',
+          image: 'https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png',
+          description: 'Develop AI algorithms to solve complex puzzles and problems.',
+          fullDescription: 'Design and implement AI algorithms to solve various puzzles and optimization problems. Demonstrate your understanding of artificial intelligence concepts through practical applications.',
+          skills: ['AI', 'Algorithm Design', 'Problem Solving'],
+          rules: [
+            'Individual or team of 2 participants',
+            'Multiple rounds with different puzzle types',
+            'Participants must bring their own development environment',
+            'Languages allowed: Python, Java, C++',
+            'Solutions will be judged on effectiveness, efficiency, and innovation'
+          ],
+          coordinators: [
+            { name: 'Dharshini', phone: '9789443458' },
+            { name: 'Madhumitha', phone: '6361739963' },
+            { name: 'Janarthanan', phone: '9003119904' },
+            { name: 'Praveen', phone: '8610322907' }
+          ]
+        },
+        {
+          title: 'AI Jailbreak',
+          image: 'https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png',
+          description: 'Challenge AI systems by finding creative ways to bypass their limitations.',
+          fullDescription: 'This competition challenges participants to find creative ways to "jailbreak" AI systems - making them produce outputs they were designed to avoid. Demonstrate your understanding of AI limitations and prompting techniques.',
+          skills: ['AI', 'Creative Thinking', 'Security'],
           rules: [
             'Individual participation',
-            'Solutions are ranked by code length (characters)',
-            'All solutions must correctly solve the given problem',
-            'Languages allowed: Python, JavaScript, Ruby',
-            'Multiple submissions allowed, only the shortest valid solution counts'
+            'Multiple AI systems to challenge',
+            'Ethical guidelines must be followed',
+            'Scoring based on creativity and effectiveness',
+            'Detailed documentation of methods required'
           ],
           coordinators: [
-            { name: 'Ganesh N', phone: '9876543220' },
-            { name: 'Lakshmi R', phone: '9876543221' }
+            { name: 'Sachiv C', phone: '9444299374' },
+            { name: 'Abinandudha', phone: '9500880409' },
+            { name: 'Haridharsini', phone: '8838849924' },
+            { name: 'Sowmithraa', phone: '8438364809' }
           ]
         }
       ]

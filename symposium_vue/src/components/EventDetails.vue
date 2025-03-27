@@ -4,7 +4,7 @@
     <div class="absolute inset-0 bg-light-100 dark:bg-dark-200 z-0"></div>
     <div class="absolute inset-0 bg-mesh-pattern opacity-5 z-0"></div>
     
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-screen-xl">
       <!-- Section header -->
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 gradient-text">
@@ -18,7 +18,8 @@
       <!-- Event categories -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Technical Events -->
-        <div class="modern-card hover-lift group">
+        <router-link to="/technical" class="">
+            <div class="modern-card hover-lift group">
           <div class="relative mb-6 overflow-hidden rounded-lg">
             <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                  alt="Technical Events" 
@@ -33,16 +34,20 @@
             Technical Events
           </h3>
           
-          <p class="text-dark-100 dark:text-light-200 mb-6">
+          <p class="text-dark-100 dark:text-light-200 mb-4">
             From coding challenges to hackathons, our technical events are designed to test your programming skills and problem-solving abilities.
           </p>
           
-          <div class="flex flex-wrap gap-2 mb-6">
+          <div class="flex flex-wrap gap-2 mb-4">
             <span class="px-2 py-1 text-xs font-medium rounded-full bg-primary-100/20 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300">Hackathon</span>
             <span class="px-2 py-1 text-xs font-medium rounded-full bg-primary-100/20 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300">Coding Contest</span>
-            <span class="px-2 py-1 text-xs font-medium rounded-full bg-primary-100/20 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300">Debug</span>
+            <!-- <span class="px-2 py-1 text-xs font-medium rounded-full bg-primary-100/20 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300">Debug</span> -->
             <span class="px-2 py-1 text-xs font-medium rounded-full bg-primary-100/20 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300">Web Development</span>
           </div>
+          
+          <p class="text-dark-100 dark:text-light-200 mb-2 text-sm">
+            <span class="font-semibold">Overall Coordinator:</span> Praveen S
+          </p>
           
           <router-link to="/technical" class="inline-flex items-center text-primary-600 dark:text-primary-400 font-medium hover:underline">
             <span>Explore Technical Events</span>
@@ -51,11 +56,14 @@
             </svg>
           </router-link>
         </div>
+        </router-link>
+
         
         <!-- Non-Technical Events -->
-        <div class="modern-card hover-lift group">
+        <router-link to="/non-technical" class="">
+            <div class="modern-card hover-lift group">
           <div class="relative mb-6 overflow-hidden rounded-lg">
-            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+            <img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                  alt="Non-Technical Events" 
                  class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-dark-300/80 to-transparent"></div>
@@ -68,16 +76,20 @@
             Non-Technical Events
           </h3>
           
-          <p class="text-dark-100 dark:text-light-200 mb-6">
+          <p class="text-dark-100 dark:text-light-200 mb-4">
             Participate in a variety of fun and engaging activities that don't require technical knowledge but test your creativity and quick thinking.
           </p>
           
-          <div class="flex flex-wrap gap-2 mb-6">
+          <div class="flex flex-wrap gap-2 mb-4">
             <span class="px-2 py-1 text-xs font-medium rounded-full bg-secondary-100/20 dark:bg-secondary-900/20 text-secondary-700 dark:text-secondary-300">Quiz</span>
             <span class="px-2 py-1 text-xs font-medium rounded-full bg-secondary-100/20 dark:bg-secondary-900/20 text-secondary-700 dark:text-secondary-300">Photography</span>
             <span class="px-2 py-1 text-xs font-medium rounded-full bg-secondary-100/20 dark:bg-secondary-900/20 text-secondary-700 dark:text-secondary-300">Treasure Hunt</span>
             <span class="px-2 py-1 text-xs font-medium rounded-full bg-secondary-100/20 dark:bg-secondary-900/20 text-secondary-700 dark:text-secondary-300">Gaming</span>
           </div>
+          
+          <p class="text-dark-100 dark:text-light-200 mb-2 text-sm">
+            <span class="font-semibold">Overall Coordinator:</span> Niyas (7418971997)
+          </p>
           
           <router-link to="/non-technical" class="inline-flex items-center text-secondary-600 dark:text-secondary-400 font-medium hover:underline">
             <span>Explore Non-Technical Events</span>
@@ -86,9 +98,12 @@
             </svg>
           </router-link>
         </div>
+        </router-link>
+
         
         <!-- Workshops -->
-        <div class="modern-card hover-lift group">
+        <router-link to="/workshop" class="">
+            <div class="modern-card hover-lift group">
           <div class="relative mb-6 overflow-hidden rounded-lg">
             <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                  alt="Workshops" 
@@ -121,6 +136,8 @@
             </svg>
           </router-link>
         </div>
+        </router-link>
+
       </div>
       
       <!-- CTA Banner -->

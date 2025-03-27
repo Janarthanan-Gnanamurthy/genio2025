@@ -192,7 +192,13 @@ export default {
           speaker: 'Dr. Arjun Reddy',
           speakerTitle: 'AI Research Scientist, Google',
           speakerImage: 'https://randomuser.me/api/portraits/men/32.jpg',
-          speakerBio: 'Dr. Arjun Reddy is an AI Research Scientist at Google with over 10 years of experience in machine learning and deep learning. He has published numerous papers in top-tier conferences and journals, and has developed ML models used by millions of users worldwide.'
+          speakerBio: 'Dr. Arjun Reddy is an AI Research Scientist at Google with over 10 years of experience in machine learning and deep learning. He has published numerous papers in top-tier conferences and journals, and has developed ML models used by millions of users worldwide.',
+          coordinators: [
+            { name: 'Sidharthan S', phone: '8610322907' },
+            { name: 'JayaSree', phone: '8148866771' },
+            { name: 'Ragulgandhi', phone: '6383104259' },
+            { name: 'Sandhiya', phone: '8148574595' }
+          ]
         },
         {
           title: 'Cybersecurity Essentials',
@@ -297,6 +303,39 @@ export default {
           speakerTitle: 'IoT Engineer, Intel',
           speakerImage: 'https://randomuser.me/api/portraits/women/28.jpg',
           speakerBio: 'Priya Sharma is an IoT Engineer at Intel who specializes in embedded systems and connected devices. She has designed IoT solutions for smart homes, industrial automation, and healthcare applications. Priya is also the author of "Practical IoT Projects," a popular book for beginners.'
+        },
+        {
+          title: 'Hackathon / Project Expo',
+          date: 'April 22-23, 2025',
+          time: '9:00 AM - 5:00 PM',
+          venue: 'Innovation Hub',
+          capacity: 200,
+          description: 'Develop innovative solutions and showcase your projects in this 24-hour coding marathon.',
+          fullDescription: 'GENIO 2.0 Hackathon is a flagship event where participants will develop solutions for real-world problems. Teams will have 24 hours to ideate, design, and develop a working prototype before presenting to judges. The Project Expo allows participants to showcase innovative solutions they have been working on.',
+          prerequisites: [
+            'Basic programming knowledge',
+            'Development tools for your chosen platform',
+            'Laptops and necessary equipment',
+            'Pre-formed teams (for Hackathon)'
+          ],
+          learningOutcomes: [
+            'Apply problem-solving skills to real-world challenges',
+            'Develop teamwork and time management skills',
+            'Create a working prototype in limited time',
+            'Pitch and present technical solutions effectively'
+          ],
+          icon: 'fas fa-laptop-code',
+          tags: ['Hackathon', 'Project Expo', 'Innovation'],
+          speaker: 'Prof. David Kumar',
+          speakerTitle: 'Director of Innovation, Tech Solutions Inc.',
+          speakerImage: 'https://randomuser.me/api/portraits/men/45.jpg',
+          speakerBio: 'Prof. David Kumar has over 15 years of experience in the tech industry and academia. He has mentored numerous successful tech startups and leads innovation initiatives at Tech Solutions Inc.',
+          coordinators: [
+            { name: 'Sabari Ganeshan K', phone: '9944683122' },
+            { name: 'DeviBala', phone: '9994220746' },
+            { name: 'Divya', phone: '8072571692' },
+            { name: 'Manikandan V', phone: '8072816797' }
+          ]
         }
       ]
     }
@@ -312,8 +351,13 @@ export default {
     },
     registerForWorkshop() {
       // This would typically connect to a registration system
-      alert(`Thank you for registering for "${this.selectedWorkshop.title}"! A confirmation email will be sent to ${this.registrationForm.email}.`);
+      alert(`Thank you ${this.registrationForm.name} for registering for ${this.selectedWorkshop.title}!`);
       this.selectedWorkshop = null;
+      this.registrationForm = {
+        name: '',
+        email: '',
+        institution: ''
+      }
     }
   }
 }

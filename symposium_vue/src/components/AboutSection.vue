@@ -8,7 +8,7 @@
     <div class="absolute -top-64 -right-64 w-96 h-96 rounded-full bg-primary-200/20 dark:bg-primary-800/20 blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-64 -left-64 w-96 h-96 rounded-full bg-secondary-200/20 dark:bg-secondary-800/20 blur-3xl pointer-events-none"></div>
     
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-screen-xl">
       <div class="flex flex-col lg:flex-row items-center gap-16">
         <!-- About image -->
         <div class="w-full lg:w-1/2 rounded-xl overflow-hidden shadow-lg gradient-border">

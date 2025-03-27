@@ -110,6 +110,23 @@
         </div>
       </div>
 
+      <!-- Coordinators Section -->
+      <div class="bg-neutral/40 backdrop-blur-sm rounded-xl p-8 border border-primary/20 mb-12">
+        <h2 class="text-3xl font-display font-bold mb-6 text-center">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Fun Room Coordinators</span>
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div v-for="(coord, index) in coordinators" :key="index" class="flex flex-col items-center text-center p-4">
+            <div class="w-16 h-16 rounded-full bg-primary/30 flex items-center justify-center mb-3">
+              <i class="fas fa-user text-2xl text-secondary"></i>
+            </div>
+            <h3 class="font-bold text-white mb-1">{{ coord.name }}</h3>
+            <p class="text-gray-400">{{ coord.phone }}</p>
+          </div>
+        </div>
+      </div>
+
       <div class="flex justify-center">
         <router-link to="/" class="btn btn-outline btn-secondary">
           <i class="fas fa-arrow-left mr-2"></i> Back to Home
@@ -188,6 +205,13 @@ export default {
           duration: '15 min sessions',
           participants: 'Individual or Pairs'
         }
+      ],
+      coordinators: [
+        { name: 'Thirumalini', phone: '8072535396' },
+        { name: 'Madhan', phone: '8270217148' },
+        { name: 'Udhayakumar', phone: '6379194938' },
+        { name: 'Jeevitha', phone: '6383700639' },
+        { name: 'Mohaideen Niyas', phone: '7418971997' }
       ]
     }
   }

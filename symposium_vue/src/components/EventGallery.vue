@@ -4,7 +4,7 @@
     <div class="absolute inset-0 bg-gradient-to-b from-light-100 to-light-200 dark:from-dark-200 dark:to-dark-100 z-0"></div>
     <div class="absolute inset-0 bg-mesh-pattern opacity-5 z-0"></div>
     
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-screen-xl">
       <!-- Section header -->
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 gradient-text">

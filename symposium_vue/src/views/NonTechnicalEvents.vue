@@ -80,9 +80,46 @@ export default {
       selectedEvent: null,
       nonTechnicalEvents: [
         {
-          title: 'Treasure Hunt',
+          title: 'IPL Auction',
           image: 'https://cdn.pixabay.com/photo/2017/01/10/14/48/old-1969568_1280.jpg',
-          description: 'Navigate through campus to find clues and solve puzzles in this exciting treasure hunt adventure.',
+          description: 'Experience the thrill of IPL auction by strategically bidding for players to create your dream cricket team.',
+          fullDescription: 'Simulate the IPL auction experience where participants have a limited budget to bid and build their dream cricket team. Test your cricket knowledge, strategic thinking, and resource management skills in this exciting event.',
+          rules: [
+            'Team size: 2-3 members',
+            'Fixed budget allocation per team',
+            'Must select a balanced team of batsmen, bowlers, all-rounders, and wicket-keepers',
+            'Auction will follow IPL auction format with base prices',
+            'Teams will compete in a virtual tournament after player selection'
+          ],
+          coordinators: [
+            { name: 'Santhya S', phone: '8015842650' },
+            { name: 'SuryaPrakash', phone: '9543457446' },
+            { name: 'Lakshana', phone: '7695819390' },
+            { name: 'Rohit A', phone: '9488382326' }
+          ]
+        },
+        {
+          title: 'Photography',
+          image: 'https://cdn.pixabay.com/photo/2014/10/30/17/32/camera-509526_1280.jpg',
+          description: 'Showcase your photography skills with creative and impactful images.',
+          fullDescription: 'Capture the essence of the symposium through your lens. This competition challenges photographers to document the events, people, and atmosphere of GENIO 2.0 in creative and compelling ways.',
+          rules: [
+            'Individual participation',
+            'Both DSLR and smartphone photography categories available',
+            'Photos must be taken during the symposium',
+            'Basic editing allowed, no heavy manipulation',
+            'Photos will be judged on creativity, composition, and storytelling'
+          ],
+          coordinators: [
+            { name: 'Madesh K', phone: '8438508690' },
+            { name: 'Vedhavan V', phone: '7200668090' },
+            { name: 'Puvanesh', phone: '9342371737' }
+          ]
+        },
+        {
+          title: 'Treasure Hunt',
+          image: 'https://cdn.pixabay.com/photo/2014/07/08/10/47/team-386673_1280.jpg',
+          description: 'Navigate through a series of clues and challenges to find hidden treasures.',
           fullDescription: 'Embark on an adventurous journey around the campus, solving cryptic clues, riddles and challenges to find hidden treasures. Test your problem-solving skills, teamwork and quick thinking in this thrilling hunt.',
           rules: [
             'Team size: 3-4 members',
@@ -92,93 +129,66 @@ export default {
             'First team to find all treasures wins'
           ],
           coordinators: [
-            { name: 'Deepak S', phone: '9876543230' },
-            { name: 'Ananya P', phone: '9876543231' }
+            { name: 'Entharasu K', phone: '9361876797' },
+            { name: 'Deepa S', phone: '7418218985' },
+            { name: 'Pramothini', phone: '9025779943' }
           ]
         },
         {
-          title: 'Tech Quiz',
-          image: 'https://cdn.pixabay.com/photo/2014/07/08/10/47/team-386673_1280.jpg',
-          description: 'Test your knowledge of technology, gadgets, programming languages, and tech history.',
-          fullDescription: 'A competitive quiz that tests participants\' knowledge of technology trends, gadgets, programming languages, tech history, and current affairs in the tech world. Multiple rounds with increasing difficulty will challenge even the most tech-savvy participants.',
-          rules: [
-            'Team size: 2 members',
-            'Multiple rounds with varying formats',
-            'Preliminary written round followed by on-stage finals',
-            'Use of electronic devices strictly prohibited',
-            'Quiz master\'s decision is final'
-          ],
-          coordinators: [
-            { name: 'Varun D', phone: '9876543232' },
-            { name: 'Reshma K', phone: '9876543233' }
-          ]
-        },
-        {
-          title: 'Photography Contest',
-          image: 'https://cdn.pixabay.com/photo/2014/10/30/17/32/camera-509526_1280.jpg',
-          description: 'Capture the essence of technology and innovation through your lens.',
-          fullDescription: 'Showcase your photography skills by capturing images that represent technology, innovation, or digital transformation. Photos will be judged on creativity, composition, technical skill, and relevance to the theme.',
-          rules: [
-            'Individual participation',
-            'Theme: "Technology & Innovation"',
-            'Maximum 3 entries per participant',
-            'Basic editing allowed, but no heavy manipulation',
-            'Submission deadline: April 18, 2025'
-          ],
-          coordinators: [
-            { name: 'Nikhil M', phone: '9876543234' },
-            { name: 'Tanvi B', phone: '9876543235' }
-          ]
-        },
-        {
-          title: 'Tech Debate',
+          title: 'Anime and Marvel Trivia',
           image: 'https://cdn.pixabay.com/photo/2017/03/30/09/16/debate-2187444_1280.jpg',
-          description: 'Engage in structured arguments about controversial technology topics and ethical dilemmas.',
-          fullDescription: 'Debate on pressing technological issues and ethical dilemmas of our time. Participants will be assigned positions to argue for or against topics such as AI ethics, privacy concerns, digital rights, and more.',
+          description: 'Test your knowledge of anime and Marvel universe in this exciting trivia competition.',
+          fullDescription: 'Are you an anime or Marvel superfan? Prove your knowledge in this comprehensive trivia competition covering everything from classic anime series to the latest Marvel blockbusters.',
           rules: [
-            'Team size: 2 members',
-            'Debate format: Opening statements (3 min), Rebuttals (2 min), Closing arguments (2 min)',
-            'Topics will be announced 30 minutes before the debate',
-            'Judging based on content, delivery, and rebuttals',
-            'Professional conduct expected at all times'
+            'Team size: 2-3 members',
+            'Multiple rounds covering both anime and Marvel content',
+            'Questions range from easy to expert-level',
+            'Final round will be rapid-fire',
+            'Tie-breaker questions prepared in case of equal scores'
           ],
           coordinators: [
-            { name: 'Rohit J', phone: '9876543236' },
-            { name: 'Kavita S', phone: '9876543237' }
+            { name: 'Sridhar S', phone: '8300003849' },
+            { name: 'Ramasamy B', phone: '9100078887' },
+            { name: 'Preethi', phone: '9942881139' },
+            { name: 'Avinash', phone: '9360025428' }
           ]
         },
         {
-          title: 'Tech Ad-Mad Show',
+          title: 'Crime Detection',
           image: 'https://cdn.pixabay.com/photo/2020/05/18/16/17/social-media-5187243_1280.png',
-          description: 'Create and perform creative advertisements for fictional tech products.',
-          fullDescription: 'Let your creativity shine by creating and performing an advertisement for a fictional tech product or service. Teams will be judged on creativity, humor, presentation skills, and the innovation of the fictional product concept.',
+          description: 'Solve mysteries and criminal cases using deductive reasoning and detective skills.',
+          fullDescription: 'Channel your inner Sherlock Holmes in this interactive crime-solving event. Teams will be presented with fictional crime scenarios and must gather clues, interview suspects, and solve the case before time runs out.',
           rules: [
-            'Team size: 3-5 members',
-            'Performance time: 3-5 minutes',
-            'Props and costumes allowed',
-            'Product must be fictional and technology-related',
-            'Pre-registration required with product concept'
+            'Team size: 3-4 members',
+            'Multiple crime scenarios of increasing complexity',
+            'Time limit: 45 minutes per case',
+            'Teams must document their investigative process',
+            'Points awarded for correct solutions and investigative methods'
           ],
           coordinators: [
-            { name: 'Sanjay V', phone: '9876543238' },
-            { name: 'Neha R', phone: '9876543239' }
+            { name: 'Apsara', phone: '9342716408' },
+            { name: 'Honey Priya Dharshini V', phone: '8838012447' },
+            { name: 'Gowtham', phone: '6374448526' },
+            { name: 'Deepa', phone: '9597492370' }
           ]
         },
         {
-          title: 'Gaming Tournament',
+          title: 'Meme Creation',
           image: 'https://cdn.pixabay.com/photo/2021/09/07/07/11/game-console-6603120_1280.jpg',
-          description: 'Compete in popular esports titles including Valorant, CS:GO, and FIFA.',
-          fullDescription: 'Battle it out in this exciting gaming tournament featuring popular esports titles. Show off your skills, strategy, and teamwork to claim the gaming champion title of GENIO 2K25.',
+          description: 'Create hilarious and relatable tech and college-themed memes to entertain and engage.',
+          fullDescription: 'Put your creativity and humor to the test in this meme creation competition. Create original memes related to technology, college life, or the symposium itself that resonate with your peers and make them laugh.',
           rules: [
-            'Games: Valorant, CS:GO, FIFA 25',
-            'Tournament structure depends on number of registrations',
-            'Participants must bring their own peripherals',
-            'Standard tournament rules apply for each game',
-            'Anti-cheating measures will be enforced'
+            'Individual or team of 2 participants',
+            'Memes must be original and created during the event',
+            'Theme will be announced at the start',
+            'Appropriate content guidelines must be followed',
+            'Judging based on humor, creativity, and relevance'
           ],
           coordinators: [
-            { name: 'Akash P', phone: '9876543240' },
-            { name: 'Shreya G', phone: '9876543241' }
+            { name: 'Janet', phone: '7397081369' },
+            { name: 'Kabish D', phone: '7418836307' },
+            { name: 'Subash', phone: '8148407557' },
+            { name: 'Sreedharshni', phone: '8248210862' }
           ]
         }
       ]

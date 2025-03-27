@@ -27,7 +27,7 @@
     </div> -->
     
     <!-- Content -->
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-screen-xl">
       <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
         <!-- Left content -->
         <div class="w-full lg:w-1/2 text-center lg:text-left">
