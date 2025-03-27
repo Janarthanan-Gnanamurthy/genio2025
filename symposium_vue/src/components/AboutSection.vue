@@ -25,7 +25,7 @@
           
           <div class="prose prose-lg dark:prose-invert max-w-none">
             <p class="mb-4 text-dark-100 dark:text-light-200">
-              GENIO 2K25 is the flagship technical symposium organized by the Department of Computer Science and Engineering at Anna University Regional Campus.
+              GENIO 2K25 is the flagship technical symposium organized by the Department of Computer Science and Engineering along with Aritficial intelligence and Data Science at Anna University Regional Campus.
             </p>
             
             <p class="mb-6 text-dark-100 dark:text-light-200">

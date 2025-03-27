@@ -19,7 +19,7 @@
               GENIO 2K25
             </router-link>
             <p class="mt-4 text-dark-100 dark:text-light-200">
-              The Annual Technical Symposium by the Department of Computer Science, Anna University Regional Campus.
+              The Annual Technical Symposium by the Department of CSE and AI & DS, Anna University Regional Campus.
             </p>
           </div>
           <div class="mt-6 flex space-x-4">
