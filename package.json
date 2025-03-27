@@ -1,0 +1,22 @@
+{
+  "name": "symposium---2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tabler/icons-react": "^3.31.0",
+    "autoprefixer": "^10.4.21",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.6.2",
+    "lucide-react": "^0.484.0",
+    "postcss": "^8.5.3",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.17"
+  }
+}

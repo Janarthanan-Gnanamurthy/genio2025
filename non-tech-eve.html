@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non-Tech | GENIO 2K25</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Awesome-icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="CSS/stylesheet.css" />
+
+    <style>
+      .grid-box {
+        position: relative;
+        height: 300px; /* Increased for better content fit */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        overflow: hidden;
+     
+      }
+
+      /* Dark overlay */
+      .grid-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+      }
+
+      /* Content inside box */
+      .grid-box .content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+      }
+
+      /* Box Title */
+      .grid-box h4 {
+        font-size: 1.4rem;
+        margin-top: 100px;
+        margin-bottom: 10px;
+      }
+
+      /* Box Description */
+      .grid-box p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      /* Button Styling */
+      .grid-box .btn {
+        font-size: 0.85rem;
+        padding: 5px 12px;
+        background-color: #241e41;
+        border: none;
+        color: white;
+        transition: 0.3s ease;
+      }
+
+      .grid-box .btn:hover {
+        background-color: #cc5200;
+      }
+
+      /* ========= */
+      .section-container {
+        padding: 40px 0;
+      }
+      .section-img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .points-list li {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+
+      .col-lg-7 ul {
+        margin: 13%;
+      }
+
+      .back-button {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        background-color: transparent;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+      }
+
+      .back-button:hover {
+        background-color: #0056b3;
+        color: #fff;
+      }
+
+      .back-button i {
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <a href="index.html#evnts-gallery" class="back-button">
+        <i class="fa-solid fa-angle-left"></i> Back
+      </a>
+
+      <h2 style="text-align: center; margin: 30px 0">Non-Technical Events</h2>
+
+      <div class="row">
+        <!-- Repeating Boxes -->
+        <div class="col-6 col-md-3">
+          <div
+            class="grid-box"
+            style="
+              background-image: url('https://rvrjcce.ac.in/ece/youthfest2k17/CivilFest2K17/images/PaperPresentation1.jpg');
+            "
+          >
+            <div class="content">
+              <h4>Paper Presentation</h4>
+              <a href="#" class="btn btn-sm" id="papper-btn"
+                >Quick look <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div
+            class="grid-box"
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1VxNI60ULI3T_SyrQFCYNZgIrmQcmY0iOVA&s');
+            "
+          >
+            <div class="content">
+              <h4>Relay coding and Bind coding</h4>
+              <!-- <p>Another event happening here.</p> -->
+              <a href="#" class="btn btn-sm" id="relay-coding"
+                >Quick look <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div
+            class="grid-box"
+            style="
+              background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQDxUPEBAQFRAQFRAWFRUVEA8VEBUVFRUWFxUVFhUYHSggGholHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHSUtLS0tLSstLS0tLS0vMCstLS0tLS0tLS0tKy0tKystLSstLy0tLS0tLS0rLS0tLS0tLf/AABEIALcBEwMBEQACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAABAgADBAUGBwj/xABEEAACAQIEAQgGCAUDAgcAAAABAgADEQQSITEFEyJBUWFxgZEGMnKhscEUI0JSktHS8AcVVJOiM2LhU5QWJDRDRGOC/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAMREAAgIBAwIEBAQHAQAAAAAAAAECEQMSITEEQRMiUWFxgZGhQrHh8AUUIzLB0fFS/9oADAMBAAIRAxEAPwD5FKZDAIJQGAMIIam/0l7z8oM9ym0Gg2ggykjYwC0Vj0gHvEEolqZ6x7xA3AcJf1SD8YFlD0WG4MFsS0hQWgEgEtABaAC0AloKCASASASACASASASASASASASASACASAEQAwAygIgDCCGpx9WvjBnuVAQUYCCEtBSWghIFhEAsWsw6dO3UQSgmojesniNIFMBwqH1XHc2kULZXUwdQa5bjrGo84otlZp238pDRM2nqjyigLdTuPL8oBHpWF73B6fkYBXaAS0FBaASACASASACASASASASASACASAGAGUBgDCCDCCGtxzF8YIiu0FCBBA2gEtBA5YALQCWgEtAARBS2izKMwYjxgDvjS2lRVbttZvManxghUaVFtiyHt1HnKLYrcPf7JDj/AGm58t5C2U2ZDZge0EWgqYtRLHs3HdIUW0AFoALQUFoBIAIBIBIAIBIBIBIBIBIAYAZQSAMIIOIIbKnqr3GCIQQAAQQcCUgQIJYbQLIVgWDLAIVgWQJfSCkrdQgtlRECxbSCyC42MFNCY5xoSGA6GAYe+AXh6FRbNTKFdboxIsTrzWvfW3SNzIUpbhyt/p1UPY3Mb3833yksz18HUTVkYDoNjlPcdjBbKLSFARAFtBQWgEgAgEgEgAgEgEgEgBgBEoDAGEhBhKQ21tl7oMoQCAECUjHAgy2OFlJYwSCWQpKLJlkFkKQWyIu56pCplDCKFikRRbFtFABEhQEQWx8PbMAdjoe46QypkK2NukQC2jiaiHmuwv1E2PfALHxKt/qUkPaoyN/jp5gwCs4ai3quVPU4uPxD8oFlb8NqfZAcf7CG9w1HjAsxshG4IijViyAEFBAJABAJAJAJACIAYAZSDCQDiUhtr/Z7vnBlCShjgQYLEWUy2WqsplscLKZsOSBYCsFsGWQtiuObbr1gtlBEFsBWQWIVgopWCgIkLZFGsA0YhecT1kkeOvzkRp8lZWBYuSAQrAEvY3FxBS76a59azj/cLnz3glCE0m3Qr2qbjyP5wNxGwQPqOp7DoffFF1Garh3XdTIatFUFBAJAJAJACIA0AIggwgDrKQ24j7PsiUwhFghaolMsuRZTm2XLTMtGHIsCS0Sw5YFilYFilZDVldUQWyoiC2KRIWxSsFsUrBbFKyUWwWgppUc1Ser5kSFsUpIUnJQAOkAqyaQCvJBbEYQUQr1QUsTFMosD4HUQKsfPTb1k1610gU+wEwAc2pvcnoII16ryC2ZsVg3p+sNDexDKw07QYNJlEAkAaAGAMIIEQB1lMm3E/Z9kSmUKsEZck0YZfTEpyZppiaRzZ0cFhy9um+gA3M6JbWzy5JtOo8nR4j6P1aSB3osFOxurLfqut7HvkThL+0j8bHvNUvUnDOGYV6DVKxdbOFDAnS4B2sfhOsIQcbkeTqeq6mGZQxJPa6f7RTxDgNNaZq0MSlQLbmWGfUgX0Pb1TM8Kq4uzpg/iGSU1DLjcfft+/mcGphXHROLiz6KyxfcqrUGQ2dWU9RUg++Rprk1HJGSuLT+BUVkOlikQWxSJCikQUgWBZrSnzR3fHX5zJqyGnBbAEgWM1LSAUOumsFKSsAqcSFEy6QaRSw1goLHwkNHQ4Zaz3qFQFJIy5gb2XbXW7L0eItIVGfij2tSH2d/aO/lt4SmEc+DRIA0AIgDCCDCAMspGbcV9n2RKYQiwZZehmjDNNMyo5M1UjNHJna4TiAjK3Sh2651SUo0eHJqhPUesXiVOshpHRH3BOt+gjx1nFw8PzHsxZfH/AKVcnnqGEqNgnVUJbl9QBciyC+nfPVGLePb1PlZckcfWLW68vf1tlfAqTpVYsrArSrNqCDsOg98Yk1J/Bjrpxniiou7lFGHhmHao+W9gqsxuOhdTMQTbo9HU5Fjjqq7dfU6fH8auJRKyKeTQshzZQQ7AG1r9QnXLNTSa4PF0OB9PKWOT8z329FsYcFw/DlOWrgikWNPm3zZrBge615iMINXLg9WbqM6l4eL+6r34rj6lPEeCUMvKYaqzqDzgy+pfa5sN9tpmeKNXFm+n67Nq0Z4pPtT5MFHgGIqKWppmCmxsVve19idZhYZvdHpn/EMGNqM3TZgxGEqUyVdGVhuCCD5Gc3Frk9WPLCauLTXsTDUMzW6Bqe6ZZ1R0DSmDQnJSgTJrAAywCmospbKGWQpQUgpUw6JDSKqi6waFZtIKX4EZb1Tsm3a32fhfwkI2YHa5uemDSFgEgDQBhAGEECIAyykNuL3X2RBhFaykZek0c2b+H4SpWbJTW57wB5mSU1FWxDFLI6ijt8AoUBWZMUoIFx6xsCN9QZzyzlpTgdenxQ1OOVC8VXDrUthy9u1rgdg6fMzpilJrzHm6jHjUqgWYUkMHOuXnHp0Gssnaozjjpd1xubkx1SngxUViHeu5JFtbrrv2z2RbjjVep8PJijm6yWtX5fvZnxfGatVAjtoDe+WzbEa20trI8spKmdcfQ4sUtUF+/mbeAYQtTeoHQF1q0lB05xCm950xRtN/I8nXZlGcYU9mpOvTcmP4a9LCBWQG1UuxB0AKhVPviUHGFP1Jg6mGXqdUX+Gl9bZhwVSgUNGuagQHMuUDRiLEk7nS0xFxqpHpzRzKfiYkm+Hfp2Fx2FCJ9RWZqNS1yy2GZdQp7Re+3TJKNLyvYuHK5y/qwSmvT0fc2VKGLZKVTDB8i00TmuFJZSQxtfUXvNtTaTj6Hnjk6aMpwz1bk3ur2fHb0KMNV5bFUhUQ5hblS2uZqdyT2CygeEieqatfE65IeF083CW34a9H+rspRqOpZSDUObQCwvqBbxnB1I+hDxMaSu6N9ThCHIKbEs6ByNNjcjwsLySxLaiY+tl5nJbJ1+/mHF+i9VQXVqboATdW6PGSWCSVrc3j/ieKUlGScX7o4tfh1RbsVOXrsbec5Uz2rLBukzHUpGQ6Gd0gFDraUqKCpMhpAsBtIbRhrDWCld4KX8QbKopfd1b2jv8AIeEhFuYYNAgEgDwAwAiAMIIMJSG3Gbr7K/CDCKlMqIzZgEVqiq18pOtt5JNpbFxxUppS4O9Vqrh6xNLm2y2Guo67zjFPJHzHfI44cnkKqtXlK7ED1iPgJ2j5Ybnkn58jrueno+jCChytQ2PNtruTsB3zzvO26R7I9Gkt+TXR9HHFGuWAVij5Be7Mcp006L2lWRalualil4c1W9HjS9XKEzEoCSFvoD0mxn0N6o+BWPVqrfgPKPluV90ls1pi+GXPxNTQWiU9V2YkEWNxbab1pxo4LpZLM8l8pIvw2PpjDVKedgztSsCGsApJNugdE1Ga0tHHJ0+R54TrZJ/c14bAfSKamg1IMoyuGqc5m3zAa2GtvCbUdS8pwydR4E2sqdPdUtkvQmNpFUpYc2Dq9TlPuqWKhSTtbLrElSUSYZKU55lw0q96u/uZMr06vJqzqxbKGUsobWwI6wZjdOkd7hkx65JNVe9OjeiI3EMosEWpr1fV6t5lT5zbrxDhHUujt7tr8/8ApvPC0bkqtTXli7strDKAXNj+EeMaFs33MvqppThD8NJP34MmHL2rVmU5lprTFrWGay6dyqZhO05e1HolFRlDHHi3J/Lf82WcJYqzO1wEpudQbXPNXftYeU5wVNs9GeVqMPVr/b/I2nG1aNOmtMi7KXa4BvmPN/xA85dcoJJHP+Wx55ycl3pfLn7sqxaU+UqPWpBlpomcDm3qNlGVbbAEn8MrrU3JcfmSHiLHGOOVNt132V7v7fU4vFsLhyi1KKVUViykMQdQFPN7OdvMTjCrierBk6hScMjTap7fPn6HIbCL0N5icWj3Rm+6KKtIgaTNHVSRymqm/Z1RRtMqrC/ZBoOCTKTUO1PUe19n8/CCMw1WuST0yGkhIKCASAOIAYARAGEEGEqIbMZuvsr8IMoqWUjNGGqZWBkatEi6dm/EV8xW/QLX8ZIKkXLLU0X0FdGFS2g1v0StqSo5pSg1OjrYnj1Z6a0r81WDAd22vjMwwxTs65Osm0j23CfSOlURSzAMLX6CLfv3zzTxSifQx9RjmrTPMemgptiOWo+pVGpHS6mzHyK++evpm9NPsfJ6+MfE1Lv+Zi4DTFSpla+Szk6/dUka99p7Me8qZ8brJPHico82vzNS8bWsQtehhzmsC+TVb6Ztb7b+E2sqltJI8z6F4vNinLbtfPt25KcDgcMxqmoGNOkPWQ2Ju2UEDt6pIwg7vhG8+fqIqChWqXZ/CxMRwfCupbD1qhZRmKumyjc3sBppDxwa8rNY+s6mEks0Ek9rT7+ncyYXhVao+SlUBJv9ojYTCxybpM75erxY46skaXwNVXi3EKYak5DAXU8xDa2mhW3nNvJlWx549H0M2skdu/L/ACZOE4gq61a1BvWDdKlrWbTNuT+c5eJTto9j6ZZIOOOft6nbrY9ChXnI5LOxGvNIswPeWJI7B2SeKqD6Oamtk0lt9gUKaVaBpJWpK5cOc7ZSdLAAdmvmJqNSVJnDLqxz1uDaqtldbnQqYZqYWgcrNUele2oyW6+/4RpaVd2b8SEpLI/7Unz6/wDCyvXHKNS5Onlp5hmK3ZUVSQwJ32GndL4mp00cn03hQ1KTva1ezbf6nJxbjkVLXvWZqjHuuq38c5nOT8vx3PVjh/VdcRSivzf2oycZpDm0gf8ASUX9puc3xA8JJ7UvQ6dP5tWT/wBP7LZf7+ZwnFpzZ64mDFOwMh0RznUk3kNorddNd4NExhyqKY6NW9o/loPAwDCRIaFIgosAkAeAMIAYARAGEEZrxm6+yvwlMIpEBocGUyzTTq33gyzWmLIFrkjqG0ulcmXKVVY1OoDNHJpmykmlww7r6+EWZrazXi8SxCrzcqA2Fwd9Tf8AfREI1b9TOWeql2Rv4NUs9bmgZKNY6DYgAT0YXy/ZnzevW0Y+s4o5QAPXMnpbZ2OE4ZWw9YNVVA7UVzNtzSWt4ztjinF71wfO6rLKOfG1HVSk6XvsRsL9Hp1LOlTlVCKaZzAc5S2Y9Fxt12MadKe936BZfHyQ8rjpdu9uzqvX3K8E7UaIq09KzVSimwPNyi4sdNyPKSLcY2ubN5oxy5Xjn/ao2/jf+h+RU4/kwSUFQ5rm98ozPfs0aWv6lGNbXR663rb57L/B0uGcYrMAra0eTIIBTMA2ZVCjfsnLxXw+D0/yUF5orzJc2+fWjU9AGio5JWq1SwuAASFyra/Rr3bTOlNLbk7+K4zl5qSW/wAzEcBhndVGa1iXcHTLlzG1+rUSaIN0V9RnhBzddqT+NB4nhaasjUMQ2f6sBSpVtVFjmHd75nRH8LOv8xkbrLjVVzd/Yu43hsRRqColWkyFKa1AHUt0LsR2yqE4p0zEuo6fJOClFpumttuPYyHjDikoqYekwQZL5TmUa5TfXqJt2yeK6pxRtdHHVqhka33V7HPxVcMxZgcxJJPWTrec3K9z1RxaEkuEXcB4J9Or8hTazhSxLGygDwJJ16BOcpUenFi1W32PRYr+E9Qi64hC3Ucy+/KZjWzt4Ufc85xf+F/EaKl6SLVAB5qumfwBtm8JpT9TLxr8LPEGg1N25VGVqW6urKwb7IKnUdduoGaswjDUNzeUqKzIVCGCimACAWCAGAGANACIIasZuvsrKYRSDBSFtZTDLEaUyy5TKYZdSbWUzRpRt99IMnQd86k7dV9x49PfJdBxTJTx7U6zMOcMzAqScrLc3Vrbg9U6Y5OKRwz4I5E1x6P0fqvc2vx1BzqWGWnVGzq9wAdGGUi2oJHjOvjLsqZ4V0E26yZHKPo19N7soXiKfR+Rsc3K5ybDLYJlAv13vJrWmvc6vppeP4nbTX3stp49BhmQNz2qKSNfVVTY323MqmtFe5zlgm86k1sov6t/6OriuPZXFNFo1KdMIFLLm1Crcg36/hOrzU6VNHhx/wAP1R1ycoyd3Tru+3wGqMpxdYIBnKVFQL0uVAYjo6XN5dtbokVJdNjc+LTd+l7f4Q64BqdOmzLlKFRrozXYjTrteeZwauz6cOohJrS7+H+Tu1ap5FsMosVRDe5uW0dlt5636DOje2hHmhBPI88uLr5cWczDOKdN6jIGFgmU7HOdf8Vac4OrZ6uoi5uME63u/h+rFxbJ9ISoECrTpipluTbIt1362y+ckKcrrjc31KlHEoN25Ur+P6WczHVvqnrZucUpUATvmLNn/wAUP4pIbJv97ms3nyY4dlu/lsvu19DJw6qzB7t0A732IHznNnrikztejL0auLpUq6hqZLA2W+bQlR1gaHacMsnFWezp4KUqPZYj0Sw6YgYnA1vo1VbgqVdqbX61LAjwNuyefJki9mz3Ysbx71zyazw/i4BNPE4NjvZlqgfAmZ0PlM28sOHEw1+N8Ww1jicKrIp5z0c1SmVtrscyEaG5FpHrW6dmoLDPbhm3GJw3jNEU6yq21j6ldD1q418NQekGWHUI55ellHk+Renf8Pq3DVNdKgrYTMqh9BWQtsKi7b2GYbk7CeuORSPHKDieHM0ZQpgopgCwC0QCCAMIAYARANWM+z7IlZiJmZrQUCmDJYhlMtF6GUwzRSMplouB99pTLRspnVR1svxEkuAlujNm6ZTAM0tkoN4sEvFgmaBQRWZdVJBHSDY+6E2g4KSpo7jY92pDM7NlAIuxNud0XmdTfLNLBCK8qS+B1aHFXsahN2zqTfp33HhHiO7I+kx6NCVIsfjYRcjUqbqWzc6972tpNxzUqas45eh1SUozcXVbExvF8PtUpNlqJTFkexUA3tc76geUQyR3tcmc/S5nocZK4+q52o8/xXGUzzKWYU1eqwzWLljlU3tpYZbDsMrlFqlwXFiyRbnkpye23FK/2ynA1wCTcWIN7Tm0eqL33PWcF9DauMw30mlUpgPmARic3NO5IGmonneXdquD3QwWlK6sw8U9E+K0gSlGqzC3Op1Qx+N/dMqWN8r7G2s0eHfz/wBmbC8f4xgj9bTxWTYh6bkeZE5yx45f2ujrHLlX98bPS8A/iqhAXEDniwLKmXUaXK5jr3CYlDJDdHSMseTa6Z6zh/HOF4ioH+pFUn1hzST22tc9856oyfnR10ZUqg7RzP4yqW4O7UbMvK0DUsb2QNofx8nPVj0XaPHk1VTPz807nAQwUUwAQCyAEQAwAiAG8A1Y77Psr8IMxMTHWVAIghat4MlqnslMtGlW0EplocNtKZNXKWsR0XPkDIwUZpoxRM0EomaAHNAoGaC0AtBaOoTzCOw+4tMI6UbKFQcjftX4GZfJ0XBVi6ouIAvE35tN+jKV8Qx+REIS4RxsW3OPn5i82jDKsPWsbQxR7H0O41iw30bD1aCA5mHKqp5xsDkNwbnque6eXNGK8zR7umnJ+VNfP/p6scd42rAKuEctbQVAp8AT8551KH/po9U4yXMU/qX/APjDFn/1fD8SmW3OpBqlmUncUzse3Q9sko3xJP7Eg0uYtfcSp6U8HxNkx2Gp5+urhwH8yLiWLlFcfQsoRlw/r+psb0V4JUZeTuhqjmFaj5T3amRzi+7LGORbpJnzz+IFd8FUqcKo4ipUoZaRfOQStyKi0wR0eoxv1jx74cSvWcc/UOUdB4Mz0nkFMAUwAQB4AYBIAYBLwDVjj6vsr8IMxMUFY6mUhYhtBC1DBktvKRoCtrKZo1ltO4H3kCCUVkymaBmglBzSig5oJRCZC0DNBaNzVOYNehvifzmEdKHo1bUrdZHuBv8AGHyaXBXVq3gGkvmw5HSjXHcRY/ASdzX4TjYlySLdXwJmkYKRve8Ci5cSo+yCe3aQqKvpbhrh2BG1iRbuttJpXoaU5ep3uH+nWPoBQtW4Sw1UFiBsGbc7nznGXTQfGx6I9VNbPc9fhf4t5ky4jDKWtowAcX7VPROMsM+zTO8c2N82jF6ZemFDE4SmKOF5OqWLF7FQhW2qEW5371lx4d/Mv1GTNpXkd/4PnmIqs7F3ZmZjcsxJYnrJO89SSSpHjbbdszmUCGALABAHgEgEgEvAJeAasf8AZ9lfhBmJkg0EQZLFMoLRBCMYMsZDrKSjUH5p/wDwPO5+UndFrYrLTRigZ4slBzS2CZoFEzSCgF4LRrL80ePymUbGFT6sd5+UF7FFR4IW4XE5b32YWMM0jJijY+cEopzSihCZBQpgoahsLeJgDYPLmGYkDs3PdIzSN+NqhiLXsB0/vukRpmF5SFRgFZgAMAWANAJAJeAS8AF4Brxx1Uf7V+ErMxMshoZYA14IOX6oIAGUg6HWCUXl+aR1sPcP+TJ3L2FJ0mjNAvBKJeBQbwKJeBRDBaNF+aP3uFmUaoYeoO9vlHctbFDmUgL6QDXhuHctSLKeerEDqIsNJlypmlG0cxrjQ7i80ZoraCltAaFzsvx6oIw0aDsc1tO3QGSzSRvZVFrKBprbrkNlFSCGd5SFTQBDAFgAgEgEgEgAgEEA6mIwZezK1O2Vd6iA7dV4MrYp/l7fep/3E/OBqD/L2+9T/uJ+cDUH6A33qf8AcT84Fh/l7fep/wBxPzgljjhx/wCpR/uLBbLKfDT/ANah/c/4iyD/AMt/+/D7n7bfpi/YBbhg/qcP+Kp+mL9iAHDl/qcP+Kr+iL9gMOHr/U4fzrfoi/YB/lyf1WH8636Iv2Af5cn9VhvOt+iL9gT+XL/U4f8AFU/TFlLRw4ZR/wCYw3R/7tujtHZIiljcMOUWq4c7/wDyKPzaC2jO/DG+/Q/7nD/qlJYBwqp0NSPdXoH4NFg7nBuF1lo+oeczHQg9Q6O6c5cnSPBk4n6O1HJdEYMd+a2U/kZVKg42cmpwDEKQCh13Oth331mtRmjSeHqoAJvbW3Rft64sRj3ZKkhtmeoZSGZzBCloBU0pBDAAYAsAkAkAEAkAkAMAkAEAF4IG8Al5RQ6GCBU/vxgAZ9YIHOIBM4gpM8AmYwCXgFinTy+cgLW2EFKyYBZS6e6BR6bglQ8goudMw/yMyzrHg1vUPWZC0UtXcbMR3EwKMdQwQyVDKRmaoZSFDQCpoIVNKQUwBTAFgEgEgEgEgEtADaACAAwAQCQCQBlMEGX8pUGI28ECIARADeAG8AF4BYm3765ClrflBRGgFuHGvu89JGEei4Ufquwknz1+cyzrHg0s0FKHMAz1DKQy1IIZqkpkpaAVNBCsygQwQUwAQAQCQAwCQAwCQAQAGALAJAJADfSAMD8vhCAoN4AQIAYBLSkJBSXkIWJt++uQpeBfyHwlArCLFGjDDTtuJlmkdbhbWQr91iB3GxHuMhuJrYwUpdoIZ3MpDO5ghnqGUhS0AqaCCGUCGCCmACAf/9k=');
+            "
+          >
+            <div class="content">
+              <h4>Password Craking</h4>
+
+              <a href="#" class="btn btn-sm" id="password-cracking"
+                >Quick look <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div
+            class="grid-box"
+            style="
+              background-image: url('https://staticg.sportskeeda.com/editor/2024/08/b70a4-17250901910947-1920.jpg?w=640');
+            "
+          >
+            <div class="content">
+              <h4>AI Arena</h4>
+              <!-- <p>Don't miss this event.</p> -->
+              <a href="#" class="btn btn-sm" id="ai-arena"
+                >Quick look <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="col-6 col-md-3">
+          <div
+            class="grid-box"
+            style="
+              background-image: url('https://www.shutterstock.com/image-photo/robot-touching-jigsaw-puzzle-pieces-260nw-2333493497.jpg');
+            "
+          >
+            <div class="content">
+              <h4>AI puzzle solving</h4>
+              <!-- <p>Check out the latest.</p> -->
+              <a href="#" class="btn btn-sm" id="ai-puzzle-solve"
+                >Quick look <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div
+            class="grid-box"
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRczIaDqm74gc5R2CDrLfWAcTC5OX_U8hrwsg&s');
+            "
+          >
+            <div class="content">
+              <h4>Tech quiz</h4>
+              <!-- <p>Something new to explore.</p> -->
+              <a href="#" class="btn btn-sm" id="tech-quiz"
+                >Quick look <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div
+            class="grid-box"
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GcFxzAEwvICnbb9Q_i7dZE3dM93TaU5SyA&s');
+            "
+          >
+            <div class="content">
+              <h4>UI and UX design</h4>
+              <!-- <p>Event highlights inside.</p> -->
+              <a href="#" class="btn btn-sm" id="uix-design"
+                >Quick look <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div
+            class="grid-box"
+            style="
+              background-image: url('https://www.adobe.com/express/create/media_11aac035505cd0a4e49b4c2407463092f4f4014bd.png?width=750&format=png&optimize=medium');
+            "
+          >
+            <div class="content">
+              <h4>Animation maker</h4>
+              <!-- <p>Discover more now.</p> -->
+              <a href="#" class="btn btn-sm" id="animation-maker"
+                >Quick look <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+      const gridBoxes = document.querySelectorAll(".grid-box");
+
+      gridBoxes.forEach((box) => {
+        box.addEventListener("click", () => {
+          box.classList.toggle("active");
+        });
+      });
+
+      document
+        .querySelector("#papper-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".container").style.display = "block";
+          document.querySelector(".container").innerHTML = `
+          <div class="container section-container">
+
+              <a href="tech-eve.html" class="back-button">
+                <i class="fa-solid fa-angle-left"></i> Back
+              </a>
+              <!-- Title -->
+              <h2 class="text-center mb-4">Rules for the Game</h2>
+
+              <div class="row align-items-center">
+           
+                <div class="col-lg-5">
+                  <img src="https://www.silicon.co.uk/wp-content/uploads/2017/02/IIoT-684x400.jpg" alt="Feature Image" class="section-img">
+                </div>
+
+                    
+                <div class="col-lg-7">
+                  <ul class="points-list list-unstyled">
+                    <li>✅ Keep slides minimal—avoid too much text.</li>
+                    <li>✅ Use bullet points, diagrams, and charts instead of long paragraphs.</li>
+                    <li>✅ Ensure your paper’s main idea, problem statement, methodology, and conclusion are clear.</li>
+                    <li>✅ Stick to the time limit (e.g., 10-15 minutes).</li>
+                    <li>✅Practice with a timer to stay within the limit.</li>
+                    <li>✅ Be ready to explain your research, findings, and limitations.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        `;
+        });
+
+      // ================ Relay coding  ==========================
+
+      document
+        .querySelector("#relay-coding")
+        .addEventListener("click", function () {
+          document.querySelector(".container").style.display = "block";
+          document.querySelector(".container").innerHTML = `
+          <div class="container section-container">
+
+              <a href="tech-eve.html" class="back-button">
+                <i class="fa-solid fa-angle-left"></i> Back
+              </a>
+              <!-- Title -->
+              <h2 class="text-center mb-4">Rules for the Game</h2>
+
+              <div class="row align-items-center">
+           
+                <div class="col-lg-5">
+                  <img src="https://www.silicon.co.uk/wp-content/uploads/2017/02/IIoT-684x400.jpg" alt="Feature Image" class="section-img">
+                </div>
+
+                    
+                <div class="col-lg-7">
+                  <ul class="points-list list-unstyled">
+                    <li>✅ Keep slides minimal—avoid too much text.</li>
+                    <li>✅ Use bullet points, diagrams, and charts instead of long paragraphs.</li>
+                    <li>✅ Ensure your paper’s main idea, problem statement, methodology, and conclusion are clear.</li>
+                    <li>✅ Stick to the time limit (e.g., 10-15 minutes).</li>
+                    <li>✅Practice with a timer to stay within the limit.</li>
+                    <li>✅ Be ready to explain your research, findings, and limitations.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        `;
+        });
+
+      // ================ Password Cracking ==========================
+
+      document
+        .querySelector("#password-cracking")
+        .addEventListener("click", function () {
+          document.querySelector(".container").style.display = "block";
+          document.querySelector(".container").innerHTML = `
+          <div class="container section-container">
+
+              <a href="tech-eve.html" class="back-button">
+                <i class="fa-solid fa-angle-left"></i> Back
+              </a>
+              <!-- Title -->
+              <h2 class="text-center mb-4">Rules for the Game</h2>
+
+              <div class="row align-items-center">
+           
+                <div class="col-lg-5">
+                  <img src="https://www.silicon.co.uk/wp-content/uploads/2017/02/IIoT-684x400.jpg" alt="Feature Image" class="section-img">
+                </div>
+
+                    
+                <div class="col-lg-7">
+                  <ul class="points-list list-unstyled">
+                    <li>✅ Keep slides minimal—avoid too much text.</li>
+                    <li>✅ Use bullet points, diagrams, and charts instead of long paragraphs.</li>
+                    <li>✅ Ensure your paper’s main idea, problem statement, methodology, and conclusion are clear.</li>
+                    <li>✅ Stick to the time limit (e.g., 10-15 minutes).</li>
+                    <li>✅Practice with a timer to stay within the limit.</li>
+                    <li>✅ Be ready to explain your research, findings, and limitations.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        `;
+        });
+
+      // ================ Ai Arena ==========================
+
+      document
+        .querySelector("#ai-arena")
+        .addEventListener("click", function () {
+          document.querySelector(".container").style.display = "block";
+          document.querySelector(".container").innerHTML = `
+          <div class="container section-container">
+
+              <a href="tech-eve.html" class="back-button">
+                <i class="fa-solid fa-angle-left"></i> Back
+              </a>
+              <!-- Title -->
+              <h2 class="text-center mb-4">Rules for the Game</h2>
+
+              <div class="row align-items-center">
+           
+                <div class="col-lg-5">
+                  <img src="https://www.silicon.co.uk/wp-content/uploads/2017/02/IIoT-684x400.jpg" alt="Feature Image" class="section-img">
+                </div>
+
+                    
+                <div class="col-lg-7">
+                  <ul class="points-list list-unstyled">
+                    <li>✅ Keep slides minimal—avoid too much text.</li>
+                    <li>✅ Use bullet points, diagrams, and charts instead of long paragraphs.</li>
+                    <li>✅ Ensure your paper’s main idea, problem statement, methodology, and conclusion are clear.</li>
+                    <li>✅ Stick to the time limit (e.g., 10-15 minutes).</li>
+                    <li>✅Practice with a timer to stay within the limit.</li>
+                    <li>✅ Be ready to explain your research, findings, and limitations.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        `;
+        });
+
+      // ================ Ai Puzzle solve  ==========================
+
+      document
+        .querySelector("#ai-puzzle-solve")
+        .addEventListener("click", function () {
+          document.querySelector(".container").style.display = "block";
+          document.querySelector(".container").innerHTML = `
+          <div class="container section-container">
+
+              <a href="tech-eve.html" class="back-button">
+                <i class="fa-solid fa-angle-left"></i> Back
+              </a>
+              <!-- Title -->
+              <h2 class="text-center mb-4">Rules for the Game</h2>
+
+              <div class="row align-items-center">
+           
+                <div class="col-lg-5">
+                  <img src="https://www.silicon.co.uk/wp-content/uploads/2017/02/IIoT-684x400.jpg" alt="Feature Image" class="section-img">
+                </div>
+
+                    
+                <div class="col-lg-7">
+                  <ul class="points-list list-unstyled">
+                    <li>✅ Keep slides minimal—avoid too much text.</li>
+                    <li>✅ Use bullet points, diagrams, and charts instead of long paragraphs.</li>
+                    <li>✅ Ensure your paper’s main idea, problem statement, methodology, and conclusion are clear.</li>
+                    <li>✅ Stick to the time limit (e.g., 10-15 minutes).</li>
+                    <li>✅Practice with a timer to stay within the limit.</li>
+                    <li>✅ Be ready to explain your research, findings, and limitations.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        `;
+        });
+
+      // ================ Tech Quiz   ==========================
+
+      document
+        .querySelector("#tech-quiz")
+        .addEventListener("click", function () {
+          document.querySelector(".container").style.display = "block";
+          document.querySelector(".container").innerHTML = `
+          <div class="container section-container">
+
+              <a href="tech-eve.html" class="back-button">
+               <i class="fa-solid fa-angle-left"></i> Back
+              </a>
+              <!-- Title -->
+              <h2 class="text-center mb-4">Rules for the Game</h2>
+
+              <div class="row align-items-center">
+           
+                <div class="col-lg-5">
+                  <img src="https://www.silicon.co.uk/wp-content/uploads/2017/02/IIoT-684x400.jpg" alt="Feature Image" class="section-img">
+                </div>
+
+                    
+                <div class="col-lg-7">
+                  <ul class="points-list list-unstyled">
+                    <li>✅ Keep slides minimal—avoid too much text.</li>
+                    <li>✅ Use bullet points, diagrams, and charts instead of long paragraphs.</li>
+                    <li>✅ Ensure your paper’s main idea, problem statement, methodology, and conclusion are clear.</li>
+                    <li>✅ Stick to the time limit (e.g., 10-15 minutes).</li>
+                    <li>✅Practice with a timer to stay within the limit.</li>
+                    <li>✅ Be ready to explain your research, findings, and limitations.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        `;
+        });
+
+      // ================  UI and UX  ==========================
+
+      document
+        .querySelector("#uix-design")
+        .addEventListener("click", function () {
+          document.querySelector(".container").style.display = "block";
+          document.querySelector(".container").innerHTML = `
+          <div class="container section-container">
+
+              <a href="tech-eve.html" class="back-button">
+                <i class="fa-solid fa-angle-left"></i> Back
+              </a>
+              <!-- Title -->
+              <h2 class="text-center mb-4">Rules for the Game</h2>
+
+              <div class="row align-items-center">
+           
+                <div class="col-lg-5">
+                  <img src="https://www.silicon.co.uk/wp-content/uploads/2017/02/IIoT-684x400.jpg" alt="Feature Image" class="section-img">
+                </div>
+
+                    
+                <div class="col-lg-7">
+                  <ul class="points-list list-unstyled">
+                    <li>✅ Keep slides minimal—avoid too much text.</li>
+                    <li>✅ Use bullet points, diagrams, and charts instead of long paragraphs.</li>
+                    <li>✅ Ensure your paper’s main idea, problem statement, methodology, and conclusion are clear.</li>
+                    <li>✅ Stick to the time limit (e.g., 10-15 minutes).</li>
+                    <li>✅Practice with a timer to stay within the limit.</li>
+                    <li>✅ Be ready to explain your research, findings, and limitations.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        `;
+        });
+
+      // ================ Animation ==========================
+
+      document
+        .querySelector("#animation-maker")
+        .addEventListener("click", function () {
+          document.querySelector(".container").style.display = "block";
+          document.querySelector(".container").innerHTML = `
+          <div class="container section-container">
+
+              <a href="tech-eve.html" class="back-button">
+                <i class="fa-solid fa-angle-left"></i> Back
+              </a>
+              <!-- Title -->
+              <h2 class="text-center mb-4">Rules for the Game</h2>
+
+              <div class="row align-items-center">
+           
+                <div class="col-lg-5">
+                  <img src="https://www.silicon.co.uk/wp-content/uploads/2017/02/IIoT-684x400.jpg" alt="Feature Image" class="section-img">
+                </div>
+
+                    
+                <div class="col-lg-7">
+                  <ul class="points-list list-unstyled">
+                    <li>✅ Keep slides minimal—avoid too much text.</li>
+                    <li>✅ Use bullet points, diagrams, and charts instead of long paragraphs.</li>
+                    <li>✅ Ensure your paper’s main idea, problem statement, methodology, and conclusion are clear.</li>
+                    <li>✅ Stick to the time limit (e.g., 10-15 minutes).</li>
+                    <li>✅Practice with a timer to stay within the limit.</li>
+                    <li>✅ Be ready to explain your research, findings, and limitations.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        `;
+        });
+    </script>
+  </body>
+</html>

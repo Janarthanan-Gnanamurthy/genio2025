@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid with Background Image</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        /* Common styling for grid items */
+        .grid-box {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Overlay effect */
+        .grid-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .grid-box span, .grid-box a {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Button Styling */
+        .grid-box a {
+            display: block;
+            padding: 8px 16px;
+            background: #ff4081;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .grid-box a:hover {
+            background: #e60073;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- First 4 Boxes -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid-box" style="background-image: url('https://via.placeholder.com/300');">
+                    <div>
+                        <span>Box 1</span><br>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid-box" style="background-image: url('https://via.placeholder.com/300');">
+                    <div>
+                        <span>Box 2</span><br>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid-box" style="background-image: url('https://via.placeholder.com/300');">
+                    <div>
+                        <span>Box 3</span><br>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid-box" style="background-image: url('https://via.placeholder.com/300');">
+                    <div>
+                        <span>Box 4</span><br>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next 4 Boxes (Below) -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid-box" style="background-image: url('https://via.placeholder.com/300');">
+                    <div>
+                        <span>Box 5</span><br>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid-box" style="background-image: url('https://via.placeholder.com/300');">
+                    <div>
+                        <span>Box 6</span><br>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid-box" style="background-image: url('https://via.placeholder.com/300');">
+                    <div>
+                        <span>Box 7</span><br>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="grid-box" style="background-image: url('https://via.placeholder.com/300');">
+                    <div>
+                        <span>Box 8</span><br>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+
+</body>
+</html>

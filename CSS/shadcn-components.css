@@ -1,0 +1,410 @@
+/* shadcn/ui inspired components and styling */
+
+/* Base shadcn variables */
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --radius: 0.5rem;
+  
+  /* Light mode */
+  --background-light: 0 0% 100%;
+  --foreground-light: 240 10% 3.9%;
+  --card-light: 0 0% 100%;
+  --card-foreground-light: 240 10% 3.9%;
+  --popover-light: 0 0% 100%;
+  --popover-foreground-light: 240 10% 3.9%;
+  --primary-light: 240 5.9% 10%;
+  --primary-foreground-light: 0 0% 98%;
+  --secondary-light: 240 4.8% 95.9%;
+  --secondary-foreground-light: 240 5.9% 10%;
+  --muted-light: 240 4.8% 95.9%;
+  --muted-foreground-light: 240 3.8% 46.1%;
+  --accent-light: 240 4.8% 95.9%;
+  --accent-foreground-light: 240 5.9% 10%;
+  --destructive-light: 0 84.2% 60.2%;
+  --destructive-foreground-light: 0 0% 98%;
+  --border-light: 240 5.9% 90%;
+  --input-light: 240 5.9% 90%;
+  --ring-light: 240 5.9% 10%;
+  
+  /* Dark mode (current theme) */
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 263.4 70% 50.4%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
+}
+
+/* shadcn Button */
+.shadcn-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  font-weight: 500;
+  font-family: var(--font-sans);
+  text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.shadcn-btn-primary {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.shadcn-btn-primary:hover {
+  background-color: hsl(var(--primary) / 0.9);
+}
+
+.shadcn-btn-secondary {
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+}
+
+.shadcn-btn-secondary:hover {
+  background-color: hsl(var(--secondary) / 0.9);
+}
+
+.shadcn-btn-destructive {
+  background-color: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
+}
+
+.shadcn-btn-destructive:hover {
+  background-color: hsl(var(--destructive) / 0.9);
+}
+
+.shadcn-btn-ghost {
+  background-color: transparent;
+  color: hsl(var(--foreground));
+}
+
+.shadcn-btn-ghost:hover {
+  background-color: hsl(var(--accent) / 0.1);
+}
+
+.shadcn-btn-link {
+  background-color: transparent;
+  color: hsl(var(--primary));
+  text-decoration: underline;
+  padding: 0;
+}
+
+/* shadcn Card */
+.shadcn-card {
+  border-radius: var(--radius);
+  background-color: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+  box-shadow: 0 2px 10px hsl(var(--card) / 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.shadcn-card-header {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.shadcn-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.shadcn-card-description {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+}
+
+.shadcn-card-content {
+  padding: 1rem 1.5rem;
+}
+
+.shadcn-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* shadcn Badge */
+.shadcn-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.shadcn-badge-default {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.shadcn-badge-secondary {
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+}
+
+.shadcn-badge-destructive {
+  background-color: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
+}
+
+.shadcn-badge-outline {
+  background-color: transparent;
+  color: hsl(var(--foreground));
+  border: 1px solid hsl(var(--border));
+}
+
+/* shadcn Input */
+.shadcn-input {
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--input));
+  background-color: transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(var(--foreground));
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.shadcn-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px hsl(var(--ring));
+  border-color: hsl(var(--ring));
+}
+
+.shadcn-input::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+.shadcn-input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* shadcn Textarea */
+.shadcn-textarea {
+  display: flex;
+  min-height: 5rem;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--input));
+  background-color: transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(var(--foreground));
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  resize: vertical;
+}
+
+.shadcn-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px hsl(var(--ring));
+  border-color: hsl(var(--ring));
+}
+
+.shadcn-textarea::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+.shadcn-textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* shadcn Alert */
+.shadcn-alert {
+  position: relative;
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+}
+
+.shadcn-alert-default {
+  background-color: hsl(var(--background));
+  border-color: hsl(var(--border));
+}
+
+.shadcn-alert-destructive {
+  background-color: hsl(var(--destructive) / 0.1);
+  border-color: hsl(var(--destructive));
+  color: hsl(var(--destructive));
+}
+
+.shadcn-alert-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.shadcn-alert-description {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* shadcn Tooltip */
+.shadcn-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.shadcn-tooltip-content {
+  position: absolute;
+  z-index: 50;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  background-color: hsl(var(--popover));
+  color: hsl(var(--popover-foreground));
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  font-size: 0.875rem;
+  max-width: 20rem;
+  animation: fadeIn 0.1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* shadcn Toggle */
+.shadcn-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  background-color: transparent;
+  color: hsl(var(--muted-foreground));
+  border: 1px solid hsl(var(--border));
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+
+.shadcn-toggle[data-state="on"] {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+  border-color: hsl(var(--accent));
+}
+
+.shadcn-toggle:hover {
+  background-color: hsl(var(--accent) / 0.1);
+  color: hsl(var(--accent-foreground));
+}
+
+/* shadcn Progress */
+.shadcn-progress {
+  position: relative;
+  overflow: hidden;
+  background-color: hsl(var(--secondary));
+  border-radius: 9999px;
+  width: 100%;
+  height: 0.5rem;
+}
+
+.shadcn-progress-indicator {
+  background-color: hsl(var(--primary));
+  width: var(--progress-value, 0%);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* shadcn Tabs */
+.shadcn-tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.shadcn-tabs-list {
+  display: flex;
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.shadcn-tabs-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+
+.shadcn-tabs-trigger[data-state="active"] {
+  color: hsl(var(--foreground));
+  border-bottom-color: hsl(var(--primary));
+}
+
+.shadcn-tabs-content {
+  padding: 1rem 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .shadcn-card-header, 
+  .shadcn-card-content, 
+  .shadcn-card-footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .shadcn-btn {
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .shadcn-tabs-trigger {
+    padding: 0.375rem 0.75rem;
+  }
+} 
