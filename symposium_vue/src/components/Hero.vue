@@ -1,15 +1,15 @@
 <template>
   <section class="relative min-h-[92vh] overflow-hidden flex items-center justify-center py-20 lg:py-32">
     <!-- Background elements -->
-    <div class="absolute inset-0 bg-mesh-pattern opacity-10 dark:opacity-5 pointer-events-none"></div>
+    <!-- <div class="absolute inset-0 bg-mesh-pattern opacity-10 dark:opacity-5 pointer-events-none"></div>
     
-    <!-- Animated blobs -->
+
     <div class="absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-primary-300/20 dark:bg-primary-800/20 blur-3xl animate-pulse-slow pointer-events-none"></div>
     <div class="absolute bottom-1/4 right-1/4 w-60 h-60 rounded-full bg-secondary-300/20 dark:bg-secondary-800/20 blur-3xl animate-pulse-slow animation-delay-1000 pointer-events-none"></div>
     <div class="absolute top-3/4 right-1/3 w-40 h-40 rounded-full bg-accent-300/20 dark:bg-accent-800/20 blur-3xl animate-pulse-slow animation-delay-2000 pointer-events-none"></div>
-    
+     -->
     <!-- Floating particles -->
-    <div v-for="i in 20" :key="`particle-${i}`" 
+    <!-- <div v-for="i in 20" :key="`particle-${i}`" 
          class="absolute rounded-full opacity-30 dark:opacity-50 animate-float"
          :class="[
            i % 3 === 0 ? 'bg-primary-400 dark:bg-primary-500' : 
@@ -24,7 +24,7 @@
            animationDuration: `${Math.random() * 10 + 10}s`,
            animationDelay: `${Math.random() * 5}s`
          }">
-    </div>
+    </div> -->
     
     <!-- Content -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

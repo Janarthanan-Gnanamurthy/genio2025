@@ -1,15 +1,16 @@
 <template>
-  <div :class="['min-h-screen theme-transition', 
+  <div :class="['min-h-screen theme-transition overflow-x-hidden', 
                 {'bg-gradient-to-b from-dark-300 to-dark-200 text-light-100': isDarkMode, 
                  'bg-gradient-to-b from-light-100 to-light-200 text-dark-200': !isDarkMode}]">
-    <!-- Mesh background pattern -->
-    <div class="absolute inset-0 bg-mesh-pattern opacity-5 pointer-events-none"></div>
+    
+    <!-- Professional particle background -->
+    <ParticleBackground />
     
     <!-- Navbar -->
     <NavBar @theme-changed="onThemeChange" />
     
     <!-- Main content -->
-    <main class="relative z-10">
+    <main class="relative z-20">
       <router-view></router-view>
     </main>
     
@@ -22,12 +23,14 @@
 import { ref, onMounted, watch } from 'vue';
 import NavBar from './components/NavBar.vue';
 import Footer from './components/Footer.vue';
+import ParticleBackground from './components/ParticleBackground.vue';
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    Footer
+    Footer,
+    ParticleBackground
   },
   setup() {
     const isDarkMode = ref(true);
